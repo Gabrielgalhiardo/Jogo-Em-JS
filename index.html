@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="scrips.js"></script>
+    <title>jogo-Em-js</title>
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <main >
+        <section id="introducao">
+            <h1 id="frase">Bem vindo ao jogo</h1>
+        </section>
+        
+        <section id="sistemaPrincipal">
+                <ul id="listaCabecario">
+                <li id="dinheiroPorClick">Dinheiro por click = 1</li>
+                <li id="qntdDeTrabalhadores">Trabalhadores = 0</li>
+                <li id="qntdDeLojas">lojas = 0</li>
+                <li id="qntdDeUsinas">Usinas = 0</li>
+            </ul>
+    
+            <p id="dinheiroAtual">Dinheiro R$: 0</p>
+        <button id="botaoDinheiro" onclick="ganharDinheiro()">💵</button>
+        </section>
+        
+        <section id="upgrades">
+            <button class="trabalhador" onclick="trabalhador()">Compre um trabalhador por R$: 20👨‍🏭</button>
+            <button class="trabalhador" onclick="loja()">Compre um loja de trabalhadores por R$: 1000🏪</button>
+            <button class="trabalhador" onclick="usina()">Compre uma usina de trabalhadores por R$: 100.000🏭</button>
+        </section>
+    </main>
+    
+</body>
+</html>
