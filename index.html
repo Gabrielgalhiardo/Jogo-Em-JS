@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,33 +7,81 @@
     <script src="scrips.js"></script>
     <title>jogo-Em-js</title>
 </head>
-<body>
-    <header>
+<body id="body">
+    <main id="main">
+        <section id="mundo-1">
 
-    </header>
+            <article id="divNovaArea">
+                <button class="area" onclick="mudarMundo()">🏜️</button>
+            </article>
 
-    <main >
-        <section id="introducao">
-            <h1 id="frase">Bem vindo ao jogo</h1>
-        </section>
+            <article id="introducao">
+                <h1 id="frase">Bem vindo ao jogo</h1>
+            </article>
+            
+            <article id="sistemaPrincipal">
+
+                    <ul id="listaCabecario">
+                    <li id="dinheiroPorClick">Dinheiro por click = 1</li>
+                    <li id="qntdDeTrabalhadores">Trabalhadores = 0</li>
+                    <li id="qntdDeLojas">lojas = 0</li>
+                    <li id="qntdDeUsinas">Usinas = 0</li>
+                    </ul>
         
-        <section id="sistemaPrincipal">
-                <ul id="listaCabecario">
-                <li id="dinheiroPorClick">Dinheiro por click = 1</li>
-                <li id="qntdDeTrabalhadores">Trabalhadores = 0</li>
-                <li id="qntdDeLojas">lojas = 0</li>
-                <li id="qntdDeUsinas">Usinas = 0</li>
-            </ul>
-    
-            <p id="dinheiroAtual">Dinheiro R$: 0</p>
-        <button id="botaoDinheiro" onclick="ganharDinheiro()">💵</button>
-        </section>
+                <p id="dinheiroAtual">Dinheiro R$: 0</p>
+            <button id="botaoDinheiro" onclick="ganharDinheiro()">💵</button>
+            </article>
         
-        <section id="upgrades">
-            <button class="trabalhador" onclick="trabalhador()">Compre um trabalhador por R$: 20👨‍🏭</button>
-            <button class="trabalhador" onclick="loja()">Compre um loja de trabalhadores por R$: 1000🏪</button>
-            <button class="trabalhador" onclick="usina()">Compre uma usina de trabalhadores por R$: 100.000🏭</button>
+            <article id="upgrades">
+                <button class="trabalhador" onclick="trabalhador()">Compre um trabalhador por R$: 20👨‍🏭</button>
+                <button class="trabalhador" onclick="loja()">Compre um loja de trabalhadores por R$: 1000🏪</button>
+                <button class="trabalhador" onclick="usina()">Compre uma usina de trabalhadores por R$: 100.000🏭</button>
+            </article>
         </section>
+
+        <section id="mundo-2">
+
+        <article id="divVoltar">
+            <button class="area" onclick="voltarMundo()">🏖️</button>
+        </article>
+
+        <article id="introducao">
+            <h1 id="frase">Bem vindo ao Mundo 2</h1>
+            <p id="dolarTotal">Dolar $:0</p>
+            <p id="aguaTotal">Agua: 0</p>
+            <br>
+            <button id="guiaTransacoes" onclick="abrirGuiaTransacoes()">💲</button>
+            <button id="guiaAgua" onclick="abrirGuiaAgua()">💧</button>
+        </article>
+
+        <article id="agua">
+            <button class="fechar" onclick="fecharGuiaAgua()">X</button>
+
+            <button id="comprarAgua" onclick="comprarAgua()"><p id="precoAgua">Comprar 1 aguada por $:1,00</p></button>
+        </article>
+        
+        
+
+        <article id="transacao">
+                <button class="fechar" onclick="fecharGuiaTransacoes()">X</button>
+
+
+                <button class="comprarDolar" onclick="cambioDolar1()">1 dolar por R$:320.000,00</button>
+                <button class="comprarDolar" onclick="cambioDolar10()">10 dolar por R$:3.200.000,00</button>
+                <button class="comprarDolar" onclick="cambioDolar100()">100 dolar por R$:32.000.000,00</button>
+        </article>
+
+        <article id="arvoreDiv">
+            <img id="arvore" src="imagens/arvore.webp" alt="arvore">
+            <img id= "regador" src="imagens/regador.png" alt="regador">
+        </article>
+
+        <article id="botao">
+            <button id="regar" onclick="regar()">Regar Arvore</button>
+        </article>
+        </section>
+
+
     </main>
     
 </body>

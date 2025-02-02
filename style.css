@@ -1,6 +1,13 @@
+#mundo-1{
+    display: block;
+}
+
+#mundo-2{
+    display: none;
+}
+
 body{
     /* background-color: rgba(60, 105, 238, 0.8); */
-    background-image: url(imagens/praia.jpg);
     background-size: cover;
     /* background-image: url(imagens/planoDeFundo.webp); */
     color: white;
@@ -8,6 +15,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url(imagens/praia.jpg);
     /* justify-content: center; */
     text-align: center;
 }
@@ -15,9 +23,10 @@ body{
 main{
     background-color: rgb(18, 76, 27);
     box-shadow: 0px 0px 70px rgb(11, 194, 17);
+
     border-radius: 10%;
     margin-top: 2%;
-    height: 45em;
+    height: max-content;
 
 }
 
@@ -32,12 +41,16 @@ main{
 }
 
 #dinheiroAtual{
+    margin: auto;
     font-size: 50px;
     font-weight: bold;
 }
 
+
+
 #frase{
-    font-size: 80px;
+    margin: auto;
+    font-size: 60px;
     font-weight: bold;
 }
 
@@ -58,7 +71,7 @@ main{
 }
 
 .trabalhador{
-    background-color: green ;
+    background-color: rgb(0, 167, 0) ;
     width: 120px;
     height: 120px;
     margin-top: 10px;
@@ -69,4 +82,127 @@ main{
     transition: 500ms;
     background-color: rgb(2, 255, 2);
     color: rgb(255, 255, 255);
+}
+
+/* ProximoMundo */
+
+@keyframes girar {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(-45deg);
+    }
+}
+
+.area{
+    border-radius: 50%;
+    font-size: 70px;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#divNovaArea{
+    display: flex;
+    justify-content: end;
+}
+
+#divVoltar{
+    display: flex;
+}
+
+#arvoreDiv{
+    /* background-color: lightblue; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* width: max-content; */
+    height: 25em;
+}
+
+#arvore{
+    width: 5em;
+}
+
+#regador{
+    width: 5em;
+    height: 5em;
+    
+    
+}
+
+#guiaTransacoes{
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+#aguaTotal{
+
+    font-size: 20px;
+    font-weight: bold;
+    margin: auto;
+    color: blue;
+}
+
+#guiaAgua{
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+#agua{
+    background-color: rgb(17, 17, 94);
+    border: solid black 1px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: max-content;
+}
+
+#comprarAgua{
+    color: rgb(0, 0, 0);
+    background-color: rgb(26, 68, 253);
+}
+
+
+#dolarTotal{
+    margin: auto;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(31, 254, 15);
+}
+
+#transacao{
+    margin: 0 auto;
+    display: none;
+    height: 10vh;
+    background-color:rgb(175, 161, 60);
+    border: solid 1px black;
+    height: max-content;
+    width: max-content;
+}
+
+.fechar{
+    font-weight: bold;
+    font-size: larger;
+    display: flex;
+    background-color: red;
+    margin-bottom: 5px;
+}
+
+.comprarDolar{
+    margin-top: 10px ;
+    display: flex;
+    background-color: rgb(179, 162, 11);
+    color: rgb(255, 251, 0);
+}
+
+#regar{
+    width: 10em;
+    height: 6em;
+    border-radius: 15%;
+    border-color: transparent;
+    color: rgb(5, 51, 66);
+    background-color: rgb(40, 178, 224);
 }
